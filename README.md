@@ -17,3 +17,4 @@ Prerequisites:
 ## Labs
 
 1. [Create a cluster](create-cluster.md)
+1. [Create GCP Service Accounts to use for authenticating](create-service-accounts.md)
