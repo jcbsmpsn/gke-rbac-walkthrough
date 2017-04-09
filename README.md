@@ -18,3 +18,4 @@ Prerequisites:
 
 1. [Create a cluster](create-cluster.md)
 1. [Create GCP Service Accounts to use for authenticating](create-service-accounts.md)
+1. [Create some namespaces](create-namespaces.md)
