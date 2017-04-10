@@ -21,4 +21,5 @@ Prerequisites:
 1. [Create some namespaces](create-namespaces.md)
 1. [Create roles and role bindings](create-roles.md)
 1. [Create cluster roles and role bindings](create-cluster-roles.md)
+1. [Using Existing Cluster Roles](using-existing-cluster-roles.md)
 1. [Cleaning up](cleaning-up.md)
