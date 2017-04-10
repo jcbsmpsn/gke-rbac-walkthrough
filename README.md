@@ -20,4 +20,5 @@ Prerequisites:
 1. [Create GCP Service Accounts to use for authenticating](create-service-accounts.md)
 1. [Create some namespaces](create-namespaces.md)
 1. [Create roles and role bindings](create-roles.md)
+1. [Create cluster roles and role bindings](create-cluster-roles.md)
 1. [Cleaning up](cleaning-up.md)
