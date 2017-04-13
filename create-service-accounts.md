@@ -39,7 +39,7 @@ Create the `a-kubectl` alias, an alias to `kubectl` that uses the token of the
 GCP project master account to authenticate.
 
 ```sh
-export $primary_account="<primary-email-address-of-gcp-project>"
+export primary_account="<primary-email-address-of-gcp-project>"
 alias a-kubectl='kubectl --token="$(gcloud auth print-access-token --account=$primary_account)"'
 ```
 
