@@ -69,6 +69,10 @@ with the new `cluster-user-1` GCP Service Account to authenticate.
     ```sh
     alias 1-kubectl='kubectl --token="$(gcloud auth print-access-token --account=$account1)"'
     ```
+6. Reset the active account to be ready for the next steps.
+    ```sh
+    gcloud config set account $primary_account
+    ```
 
 ## Creating Second Service Account
 
@@ -83,6 +87,7 @@ account2=$(gcloud iam service-accounts list --format='value(email)' --filter='di
 gcloud iam service-accounts keys create --iam-account $account2 cluster-user-2.json
 gcloud auth activate-service-account $account2 --key-file=cluster-user-2.json
 alias 2-kubectl='kubectl --token="$(gcloud auth print-access-token --account=$account2)"'
+gcloud config set account $primary_account
 ```
 
 ## Enable GCP IAM Cluster Admin Roles
