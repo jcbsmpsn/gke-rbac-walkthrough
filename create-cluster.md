@@ -17,7 +17,7 @@ mechanism, the legacy authorization should be disabled.
 ## Create a New Cluster
 
 ```sh
-gcloud container clusters create permissions-test-cluster \
+gcloud beta container clusters create permissions-test-cluster \
     --cluster-version=1.6.0 \
     --no-enable-legacy-authorization
 ```
@@ -33,7 +33,7 @@ gcloud container clusters create permissions-test-cluster \
 2. Disable the legacy authorization mechanism. It is safe to re-run this command
    if the legacy authorization mechanism has already been disabled.
     ```sh
-    gcloud container clusters update permissions-test-cluster \
+    gcloud beta container clusters update permissions-test-cluster \
         --no-enable-legacy-authentication
     ```
 
