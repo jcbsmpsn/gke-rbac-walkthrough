@@ -138,9 +138,9 @@ to list nodes, the other two aliases should not be able to do anything.
 ```sh
 ➜  a-kubectl get nodes
 NAME                                                  STATUS    AGE       VERSION
-gke-permissions-test-clu-default-pool-08b7c523-2lpt   Ready     1h        v1.6.0
-gke-permissions-test-clu-default-pool-08b7c523-tj2l   Ready     1h        v1.6.0
-gke-permissions-test-clu-default-pool-08b7c523-v2z9   Ready     1h        v1.6.0
+gke-permissions-test-clu-default-pool-08b7c523-2lpt   Ready     1h        v1.6.1
+gke-permissions-test-clu-default-pool-08b7c523-tj2l   Ready     1h        v1.6.1
+gke-permissions-test-clu-default-pool-08b7c523-v2z9   Ready     1h        v1.6.1
 ```
 
 Observe in the error message that `cluster-user-1` is being refused permission.

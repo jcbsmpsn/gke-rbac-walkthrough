@@ -18,7 +18,7 @@ mechanism, the legacy authorization should be disabled.
 
 ```sh
 gcloud beta container clusters create permissions-test-cluster \
-    --cluster-version=1.6.0 \
+    --cluster-version=1.6.1 \
     --no-enable-legacy-authorization
 ```
 
