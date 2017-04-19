@@ -34,6 +34,6 @@ gcloud beta container clusters create permissions-test-cluster \
    if the legacy authorization mechanism has already been disabled.
     ```sh
     gcloud beta container clusters update permissions-test-cluster \
-        --no-enable-legacy-authentication
+        --no-enable-legacy-authorization
     ```
 
