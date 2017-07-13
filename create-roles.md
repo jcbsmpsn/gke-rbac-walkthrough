@@ -52,8 +52,17 @@ namespaces.
     ```sh
     2-kubectl get pods --namespace=ns-2
     ```
-2. Re-use the role that was created.
+2. Create the `pod-reader` role in `ns-2`, and then create a role binding to
+   associate the role with GCP Service Account 2.
+
     ```sh
+    a-kubectl create role pod-reader \
+        --verb=get \
+        --verb=list \
+        --verb=watch \
+        --resource=pods \
+        --namespace=ns-2
+
     a-kubectl create rolebinding account2-pod-reader-binding \
         --role=pod-reader \
         --user=$account2 \
