@@ -52,7 +52,11 @@ namespaces.
     ```sh
     2-kubectl get pods --namespace=ns-2
     ```
-2. Re-use the role that was created.
+2. Re-use the role that was created. This role binding is expected to fail
+   because the role is in `ns-1` and can not be linked with a role binding in
+   `ns-2`. However, it is worth noting how this role binding fails. The role
+   binding will successfully create, with no errors, but the permissions will
+   have no effect.
     ```sh
     a-kubectl create rolebinding account2-pod-reader-binding \
         --role=pod-reader \
